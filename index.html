@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOOBFour · ลงโปรแกรมของทีม</title>
+  <meta name="description" content="โหลดตัวติดตั้ง ROBLOX AI WORKSPACE ของทีม NOOBFour (Windows)">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0c0e;
+      --card: #18161a;
+      --line: #ffffff1c;
+      --text: #f1eef2;
+      --muted: #a7a1ab;
+      --red: #e0242f;
+      --red-dark: #9e1820;
+      --purple: #9b7bff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 500px at 85% -10%, #e0242f22, transparent 60%),
+        radial-gradient(700px 400px at -10% 30%, #9b7bff18, transparent 60%),
+        var(--bg);
+      color: var(--text);
+      font-family: 'Prompt', 'Leelawadee UI', 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+    .hero { text-align: center; padding: 24px 0 8px; }
+    .hero img { width: min(240px, 60vw); height: auto; filter: drop-shadow(0 10px 30px #000a); }
+    h1 { font-size: clamp(26px, 5vw, 40px); margin: 8px 0 4px; font-weight: 800; }
+    .lead { color: var(--muted); margin: 0 auto 24px; max-width: 560px; }
+    .download {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 18px 34px; border-radius: 18px;
+      background: linear-gradient(180deg, var(--red), var(--red-dark));
+      color: #fff; text-decoration: none; font-weight: 800; font-size: 20px;
+      box-shadow: 0 12px 30px #e0242f55, inset 0 1px #ffffff40;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .download:hover { transform: translateY(-2px); box-shadow: 0 16px 40px #e0242f77, inset 0 1px #ffffff40; }
+    .download:focus-visible { outline: 3px solid var(--purple); outline-offset: 4px; }
+    .small { color: var(--muted); font-size: 14px; margin-top: 10px; }
+    .need {
+      margin: 28px auto 0; max-width: 620px; padding: 14px 18px; border-radius: 14px;
+      border: 1px solid #ffd36a55; background: #ffd36a12; color: #ffe7a8; text-align: left;
+    }
+    h2 { margin: 44px 0 14px; font-size: 24px; }
+    ol.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; counter-reset: s; }
+    ol.steps > li {
+      counter-increment: s; position: relative;
+      padding: 16px 18px 16px 64px; border-radius: 16px;
+      background: var(--card); border: 1px solid var(--line);
+    }
+    ol.steps > li::before {
+      content: counter(s); position: absolute; left: 16px; top: 14px;
+      width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+      background: var(--red); color: #fff; font-weight: 800;
+    }
+    ol.steps b { color: #fff; }
+    .key {
+      display: inline-block; padding: 1px 8px; border-radius: 7px; margin: 0 2px;
+      border: 1px solid #ffffff30; background: #ffffff12; font-size: .92em; white-space: nowrap;
+    }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { padding: 16px 18px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); }
+    .card h3 { margin: 0 0 6px; font-size: 17px; }
+    code {
+      display: block; margin-top: 8px; padding: 10px 12px; border-radius: 10px;
+      background: #000; border: 1px solid var(--line); font-size: 14px; overflow-x: auto; white-space: pre;
+    }
+    footer { margin-top: 48px; text-align: center; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img src="logo.png" alt="NOOBFour">
+      <h1>ลงโปรแกรมของทีม</h1>
+      <p class="lead">ROBLOX AI WORKSPACE — ที่คุย วางแผน และสร้างเกมด้วยกันกับ AI · กดโหลด ดับเบิลคลิก รอ เสร็จ</p>
+      <a class="download" href="NOOBFour-Setup.cmd" download>⬇️ โหลดตัวติดตั้ง</a>
+      <p class="small">สำหรับ Windows 10 / 11 · ไฟล์เล็ก ~4 KB · ทำซ้ำได้ไม่มีผลเสีย (ใช้อัปเดตก็ได้)</p>
+      <div class="need">🔑 ก่อนเริ่ม: ขอ <b>รหัสผ่านบัญชี GitHub “noobfour”</b> จากดิวทางแชทส่วนตัว — หน้านี้ไม่มีรหัสใด ๆ และไม่ต้องสมัครอะไรใหม่</div>
+    </section>
+
+    <h2>ติดตั้ง 5 ขั้น (~10 นาที ทำครั้งเดียว)</h2>
+    <ol class="steps">
+      <li><b>กดปุ่มโหลดด้านบน</b><br>
+        <span class="muted">ถ้าเบราว์เซอร์เตือนว่าไฟล์ไม่ค่อยมีคนโหลด → กด <span class="key">⋯</span> → <span class="key">เก็บไว้ / Keep</span> → <span class="key">เก็บไว้ต่อ / Keep anyway</span></span></li>
+      <li><b>ดับเบิลคลิกไฟล์ NOOBFour-Setup.cmd</b> (อยู่ในโฟลเดอร์ Downloads)<br>
+        <span class="muted">ถ้าขึ้นจอฟ้า “Windows protected your PC” → กด <span class="key">More info</span> → <span class="key">Run anyway</span> (Windows เตือนทุกไฟล์ที่ไม่ได้ซื้อใบรับรอง)</span></li>
+      <li><b>กด Enter เพื่อเริ่ม</b><br>
+        <span class="muted">ถ้าเครื่องยังไม่มี Git / Node.js ตัวติดตั้งจะลงให้เอง — ถ้ามีหน้าต่างถามสิทธิ์ ให้กด <span class="key">Yes</span></span></li>
+      <li><b>หน้าต่าง GitHub เด้งขึ้นมา → ล็อกอินบัญชี noobfour</b><br>
+        <span class="muted">กด <span class="key">Sign in with your browser</span> แล้วล็อกอินด้วยรหัสที่ได้จากดิว (ครั้งเดียว เครื่องจำไว้)</span></li>
+      <li><b>รอจนขึ้น “เสร็จแล้ว!”</b> → โปรแกรมเปิดเอง + มีไอคอน <b>ROBLOX AI WORKSPACE</b> บนเดสก์ท็อป<br>
+        <span class="muted">ในโปรแกรม: เลือกชื่อตัวเอง → กด <span class="key">🔑 สร้าง token</span> → เลื่อนลงล่างสุดกด <span class="key">Generate token</span> → คัดลอกมาวาง → เข้าห้องทำงาน</span></li>
+    </ol>
+
+    <h2>หลังติดตั้ง</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🆕 อัปเดตโปรแกรม</h3>
+        <p class="muted">มีเวอร์ชันใหม่จะมีแถบขึ้นมุมขวาล่างของโปรแกรม → กด <span class="key">⬇️ อัปเดตเลย</span> โปรแกรมเปิดใหม่เอง</p>
+      </div>
+      <div class="card">
+        <h3>🤖 อยากใช้ปุ่ม AI</h3>
+        <p class="muted">ลง Codex ของตัวเอง: เปิด PowerShell แล้ววาง แล้วพิมพ์ <span class="key">codex</span> เพื่อล็อกอินบัญชีตัวเอง</p>
+        <code>npm install -g @openai/codex</code>
+      </div>
+      <div class="card">
+        <h3>😵 ติดตรงไหน</h3>
+        <p class="muted">แคปหน้าจอหน้าต่างดำ ๆ ของตัวติดตั้งส่งในแชททีม · ดับเบิลคลิกไฟล์อีกครั้งได้เสมอ ของที่ลงแล้วจะข้ามให้</p>
+      </div>
+    </div>
+
+    <footer>
+      ตัวติดตั้งนี้โหลดโปรแกรมจาก GitHub ส่วนตัวของทีม · ใช้ไม่ได้ถ้าไม่มีบัญชี noobfour · อย่าส่งรหัสผ่านหรือ token ในกลุ่มแชท
+    </footer>
+  </main>
+</body>
+</html>
